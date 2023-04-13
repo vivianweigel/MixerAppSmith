@@ -461,10 +461,10 @@
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-              "topRow": 5,
+              "topRow": 4,
               "type": "JSON_FORM_WIDGET",
               "animateLoading": true,
-              "leftColumn": 6,
+              "leftColumn": 0,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -619,7 +619,7 @@
               },
               "disabledWhenInvalid": true,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 54,
+              "originalBottomRow": 53,
               "useSourceData": false,
               "schema": {
                 "__root_schema__": {
@@ -748,7 +748,7 @@
               },
               "dynamicPropertyPathList": [],
               "displayName": "JSON Form",
-              "bottomRow": 54,
+              "bottomRow": 53,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Add New Recipe",
@@ -761,7 +761,7 @@
               "key": "a3d000cclx",
               "backgroundColor": "#fff",
               "isDeprecated": false,
-              "rightColumn": 37,
+              "rightColumn": 31,
               "widgetId": "486evx36l3",
               "minWidth": 450,
               "parentId": "0",
@@ -769,7 +769,7 @@
               "scrollContents": true,
               "responsiveBehavior": "fill",
               "fixedFooter": true,
-              "originalTopRow": 5,
+              "originalTopRow": 4,
               "maxDynamicHeight": 9000,
               "minDynamicHeight": 4
             }
