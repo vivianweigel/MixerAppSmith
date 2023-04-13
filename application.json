@@ -7,6 +7,14 @@
     {
       "id": "My Recipes",
       "isDefault": false
+    },
+    {
+      "id": "Single My Recipe",
+      "isDefault": false
+    },
+    {
+      "id": "Explore Page",
+      "isDefault": false
     }
   ],
   "viewMode": false,
