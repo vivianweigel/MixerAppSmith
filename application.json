@@ -1,7 +1,7 @@
 {
   "pages": [
     {
-      "id": "Favorite Recipes",
+      "id": "Explore Page",
       "isDefault": false
     },
     {
@@ -13,7 +13,7 @@
       "isDefault": false
     },
     {
-      "id": "Explore Page",
+      "id": "Favorite Recipes",
       "isDefault": false
     },
     {
