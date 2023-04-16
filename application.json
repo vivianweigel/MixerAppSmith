@@ -2,26 +2,33 @@
   "pages": [
     {
       "id": "Favorite Recipes",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "My Recipes",
       "isDefault": false
     },
     {
-      "id": "Single My Recipe",
+      "id": "Single My Recipe Viewer",
       "isDefault": false
     },
     {
       "id": "Explore Page",
       "isDefault": false
+    },
+    {
+      "id": "Home",
+      "isDefault": true
     }
   ],
   "viewMode": false,
   "appIsExample": false,
   "unreadCommentThreads": 0,
   "color": "#E4D8CC",
-  "icon": "team",
+  "icon": "burger",
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
   "evaluationVersion": 2,

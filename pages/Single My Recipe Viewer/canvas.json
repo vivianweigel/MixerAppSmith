@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Single My Recipe",
-    "slug": "single-my-recipe",
+    "name": "Single My Recipe Viewer",
+    "slug": "single-my-recipe-viewer",
     "layouts": [
       {
         "viewMode": false,
@@ -28,7 +28,7 @@
         },
         "layoutOnLoadActions": [],
         "validOnPageLoadActions": true,
-        "id": "Single My Recipe",
+        "id": "Single My Recipe Viewer",
         "deleted": false,
         "policies": [],
         "userPermissions": []
