@@ -30,6 +30,7 @@
           "value": "{{user_id.text}}"
         }
       ],
+      "body": "",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
