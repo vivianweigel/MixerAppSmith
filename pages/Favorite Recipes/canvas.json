@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 520,
+          "bottomRow": 580,
           "containerStyle": "none",
           "snapRows": 65,
           "parentRowSpace": 1,
@@ -74,10 +74,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 11,
+              "originalTopRow": 10,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 16,
+              "originalBottomRow": 14,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -130,10 +130,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 11,
+              "originalTopRow": 14,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 16,
+              "originalBottomRow": 18,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -271,7 +271,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1681688816558,
-              "originalBottomRow": 50,
+              "originalBottomRow": 52,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -288,7 +288,7 @@
               "dynamicPropertyPathList": [],
               "compactMode": "TALL",
               "displayName": "Table",
-              "bottomRow": 52,
+              "bottomRow": 58,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -491,7 +491,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 17,
+              "originalTopRow": 19,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             }
@@ -505,7 +505,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "user_id.inputText"
+                "user_id.text"
               ],
               "timeoutInMillisecond": 10000
             }
