@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 440,
+          "bottomRow": 520,
           "containerStyle": "none",
           "snapRows": 65,
           "parentRowSpace": 1,
@@ -25,6 +25,118 @@
           "dynamicBindingPathList": [],
           "leftColumn": 0,
           "children": [
+            {
+              "widgetName": "fav_rec_subtext",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 10,
+              "bottomRow": 14,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 17.9375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Here is where you can view all the recipes you have favorited!",
+              "key": "prvzudl2bw",
+              "isDeprecated": false,
+              "rightColumn": 31,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "zq3xmeq662",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 11,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 16,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "widgetName": "instruct_to_recipe_text",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 14,
+              "bottomRow": 18,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 17.9375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 1,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Click on a row to find out more about that recipe!",
+              "key": "prvzudl2bw",
+              "isDeprecated": false,
+              "rightColumn": 31,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "3rou80t81w",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 11,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 16,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            },
             {
               "widgetName": "fav_recipes_header",
               "displayName": "Text",
@@ -86,7 +198,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 11,
+              "topRow": 19,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -158,29 +270,30 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681687085977,
-              "originalBottomRow": 35,
+              "columnUpdatedAt": 1681688816558,
+              "originalBottomRow": 50,
               "defaultSelectedRowIndices": [
                 0
               ],
               "widgetName": "faves_table",
               "defaultPageSize": 0,
               "columnOrder": [
-                "avg_rating",
-                "category",
-                "recipe_author",
                 "recipe_name",
+                "recipe_author",
+                "category",
                 "skill_level",
+                "avg_rating",
                 "steps"
               ],
               "dynamicPropertyPathList": [],
               "compactMode": "TALL",
               "displayName": "Table",
-              "bottomRow": 44,
+              "bottomRow": 52,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
-                "status": 85
+                "status": 85,
+                "avg_rating": 173
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -209,7 +322,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "avg_rating",
+                  "label": "Average Rating",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{faves_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"avg_rating\"]))}}",
@@ -238,7 +351,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "category",
+                  "label": "Category",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{faves_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"category\"]))}}",
@@ -267,7 +380,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "recipe_author",
+                  "label": "Author",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{faves_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"recipe_author\"]))}}",
@@ -296,7 +409,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "recipe_name",
+                  "label": "Recipe Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{faves_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"recipe_name\"]))}}",
@@ -325,7 +438,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "skill_level",
+                  "label": "Skill Level",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{faves_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skill_level\"]))}}",
@@ -354,7 +467,7 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "steps",
+                  "label": "Steps",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "{{faves_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"steps\"]))}}",
@@ -378,7 +491,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 14,
+              "originalTopRow": 17,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             }
@@ -391,7 +504,9 @@
               "name": "get_fav_recipes",
               "confirmBeforeExecute": false,
               "pluginType": "API",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                "user_id.inputText"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
