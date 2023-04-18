@@ -28,7 +28,7 @@
             {
               "boxShadow": "none",
               "widgetName": "delete_myrecipe",
-              "onClick": "",
+              "onClick": "{{delete_recipe.run(() => personal_recipes.run(), () => {})}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -441,7 +441,7 @@
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-              "onSubmit": "{{post_myrecipe.run()}}",
+              "onSubmit": "{{post_myrecipe.run(() => personal_recipes.run(), () => {})}}",
               "topRow": 17,
               "type": "JSON_FORM_WIDGET",
               "animateLoading": true,
