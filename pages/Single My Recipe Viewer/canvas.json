@@ -191,7 +191,11 @@
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onRowSelected"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
                 "avg_rating": {
@@ -369,6 +373,7 @@
                   "cellBackground": ""
                 }
               },
+              "onRowSelected": "{{ingredients.run()}}",
               "key": "wknrh3lbem",
               "canFreezeColumn": true,
               "isDeprecated": false,
@@ -1103,14 +1108,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Single My Recipe Viewer_ingredients",
-              "name": "ingredients",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Single My Recipe Viewer_nutritional_info",
               "name": "nutritional_info",
               "confirmBeforeExecute": false,
@@ -1124,6 +1121,18 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Single My Recipe Viewer_ingredients",
+              "name": "ingredients",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "recipes_table.selectedRow"
+              ],
               "timeoutInMillisecond": 10000
             }
           ]
