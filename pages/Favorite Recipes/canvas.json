@@ -631,7 +631,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{post_review.run(() => get_my_ratings.run(), () => postWindowMessage('already posted a review for this recipe', 'window', '*'))}}",
+                      "onClick": "{{post_review.run(() => update_rating.run(), () => {})}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
