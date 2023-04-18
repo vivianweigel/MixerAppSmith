@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1270,
+          "bottomRow": 1230,
           "containerStyle": "none",
           "snapRows": 65,
           "parentRowSpace": 1,
@@ -179,6 +179,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "onRowSelected"
                 }
               ],
               "displayName": "Table",
@@ -458,8 +461,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 56,
-              "bottomRow": 60,
+              "topRow": 90,
+              "bottomRow": 94,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -468,7 +471,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 0,
+              "leftColumn": 11,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -485,7 +488,7 @@
               "text": "Select a recipe from above to see nutritional information \n",
               "key": "hlwejj0tau",
               "isDeprecated": false,
-              "rightColumn": 42,
+              "rightColumn": 53,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "eplm0rm09a",
@@ -498,10 +501,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 56,
+              "originalTopRow": 90,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 60,
+              "originalBottomRow": 94,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -514,8 +517,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 93,
-              "bottomRow": 97,
+              "topRow": 54,
+              "bottomRow": 58,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -524,7 +527,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 0,
+              "leftColumn": 1,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -554,10 +557,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 93,
+              "originalTopRow": 54,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 97,
+              "originalBottomRow": 58,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -566,7 +569,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 61,
+              "topRow": 95,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -607,7 +610,7 @@
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 0,
+              "leftColumn": 3,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -642,7 +645,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1681831123607,
-              "originalBottomRow": 89,
+              "originalBottomRow": 123,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -663,7 +666,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 89,
+              "bottomRow": 123,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -882,7 +885,7 @@
               "key": "nb7yg0owwo",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 34,
+              "rightColumn": 25,
               "textSize": "0.875rem",
               "widgetId": "o33jrrn24c",
               "minWidth": 450,
@@ -894,7 +897,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 61,
+              "originalTopRow": 95,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -903,7 +906,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 99,
+              "topRow": 59,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -967,11 +970,11 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1681831062571,
-              "originalBottomRow": 127,
+              "originalBottomRow": 87,
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "Table2",
+              "widgetName": "ingredient_table",
               "defaultPageSize": 0,
               "columnOrder": [
                 "amount",
@@ -984,7 +987,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 127,
+              "bottomRow": 87,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -1020,7 +1023,7 @@
                   "label": "Amount",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"]))}}",
+                  "computedValue": "{{ingredient_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1049,7 +1052,7 @@
                   "label": "Ingredient Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ingredient_name\"]))}}",
+                  "computedValue": "{{ingredient_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ingredient_name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1078,7 +1081,7 @@
                   "label": "Recipe Id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table2.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"recipe_id\"]))}}",
+                  "computedValue": "{{ingredient_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"recipe_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -1099,7 +1102,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 99,
+              "originalTopRow": 59,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             }
