@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1140,
+          "bottomRow": 1040,
           "containerStyle": "none",
           "snapRows": 65,
           "parentRowSpace": 1,
@@ -631,6 +631,7 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button1",
+                      "onClick": "{{post_review.run(() => get_my_ratings.run(), () => postWindowMessage('already posted a review for this recipe', 'window', '*'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -643,6 +644,11 @@
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 46,
                       "dynamicBindingPathList": [
                         {
@@ -948,27 +954,6 @@
               "animateLoading": true,
               "dynamicBindingPathList": [
                 {
-                  "key": "primaryColumns.step.computedValue"
-                },
-                {
-                  "key": "primaryColumns.task.computedValue"
-                },
-                {
-                  "key": "primaryColumns.status.computedValue"
-                },
-                {
-                  "key": "primaryColumns.action.computedValue"
-                },
-                {
-                  "key": "primaryColumns.action.buttonColor"
-                },
-                {
-                  "key": "primaryColumns.action.borderRadius"
-                },
-                {
-                  "key": "primaryColumns.action.boxShadow"
-                },
-                {
                   "key": "accentColor"
                 },
                 {
@@ -979,6 +964,18 @@
                 },
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.r_comment.computedValue"
+                },
+                {
+                  "key": "primaryColumns.rating.computedValue"
+                },
+                {
+                  "key": "primaryColumns.recipe_id.computedValue"
+                },
+                {
+                  "key": "primaryColumns.user_id.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -1016,127 +1013,158 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681844393860,
-              "originalBottomRow": 103,
+              "columnUpdatedAt": 1681845420570,
+              "originalBottomRow": 99,
               "defaultSelectedRowIndices": [
                 0
               ],
               "widgetName": "my_ratings",
               "defaultPageSize": 0,
               "columnOrder": [
-                "step",
-                "task",
-                "status",
-                "action"
+                "r_comment",
+                "rating",
+                "recipe_id",
+                "user_id"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 103,
+              "bottomRow": 99,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
-                "status": 85
+                "status": 85,
+                "rating": 86,
+                "recipe_id": 102,
+                "r_comment": 250
               },
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onRowSelected"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
-                "step": {
+                "r_comment": {
+                  "allowCellWrapping": false,
                   "index": 0,
                   "width": 150,
-                  "id": "step",
-                  "originalId": "step",
-                  "alias": "step",
+                  "originalId": "r_comment",
+                  "id": "r_comment",
+                  "alias": "r_comment",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isCellVisible": true,
+                  "isDisabled": false,
                   "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
                   "isDerived": false,
-                  "label": "step",
-                  "computedValue": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"step\"]))}}",
-                  "validation": {},
+                  "label": "r_comment",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"r_comment\"]))}}",
                   "sticky": "",
-                  "labelColor": "#FFFFFF"
+                  "validation": {},
+                  "cellBackground": ""
                 },
-                "task": {
+                "rating": {
+                  "allowCellWrapping": false,
                   "index": 1,
                   "width": 150,
-                  "id": "task",
-                  "originalId": "task",
-                  "alias": "task",
+                  "originalId": "rating",
+                  "id": "rating",
+                  "alias": "rating",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isCellVisible": true,
+                  "isDisabled": false,
                   "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
                   "isDerived": false,
-                  "label": "task",
-                  "computedValue": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"task\"]))}}",
-                  "validation": {},
+                  "label": "rating",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rating\"]))}}",
                   "sticky": "",
-                  "labelColor": "#FFFFFF"
+                  "validation": {},
+                  "cellBackground": ""
                 },
-                "status": {
+                "recipe_id": {
+                  "allowCellWrapping": false,
                   "index": 2,
                   "width": 150,
-                  "id": "status",
-                  "originalId": "status",
-                  "alias": "status",
+                  "originalId": "recipe_id",
+                  "id": "recipe_id",
+                  "alias": "recipe_id",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "text",
+                  "columnType": "number",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isCellVisible": true,
+                  "isDisabled": false,
                   "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
                   "isDerived": false,
-                  "label": "status",
-                  "computedValue": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"status\"]))}}",
-                  "validation": {},
+                  "label": "recipe_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"recipe_id\"]))}}",
                   "sticky": "",
-                  "labelColor": "#FFFFFF"
+                  "validation": {},
+                  "cellBackground": ""
                 },
-                "action": {
+                "user_id": {
+                  "allowCellWrapping": false,
                   "index": 3,
                   "width": 150,
-                  "id": "action",
-                  "originalId": "action",
-                  "alias": "action",
+                  "originalId": "user_id",
+                  "id": "user_id",
+                  "alias": "user_id",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
-                  "columnType": "button",
+                  "columnType": "number",
+                  "textColor": "",
                   "textSize": "0.875rem",
+                  "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
                   "isVisible": true,
-                  "isCellVisible": true,
-                  "isCellEditable": false,
                   "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
                   "isDerived": false,
-                  "label": "action",
-                  "onClick": "{{currentRow.step === '#1' ? showAlert('Done', 'success') : currentRow.step === '#2' ? navigateTo('https://docs.appsmith.com/core-concepts/connecting-to-data-sources/querying-a-database',undefined,'NEW_WINDOW') : navigateTo('https://docs.appsmith.com/core-concepts/displaying-data-read/display-data-tables',undefined,'NEW_WINDOW')}}",
-                  "computedValue": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"action\"]))}}",
-                  "validation": {},
+                  "label": "user_id",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"user_id\"]))}}",
                   "sticky": "",
-                  "labelColor": "#FFFFFF",
-                  "buttonColor": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
-                  "borderRadius": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-                  "boxShadow": "{{my_ratings.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}"
+                  "validation": {},
+                  "cellBackground": ""
                 }
               },
+              "onRowSelected": "{{storeValue('row_to_delete',my_ratings.selectedRow)}}",
               "key": "kl4jc74nf8",
               "canFreezeColumn": true,
               "isDeprecated": false,
@@ -1158,7 +1186,8 @@
             },
             {
               "boxShadow": "none",
-              "widgetName": "IconButton1",
+              "widgetName": "delete_rate_button",
+              "onClick": "{{delete_rating.run(() => get_my_ratings.run(), () => {})}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Icon Button",
               "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -1166,15 +1195,19 @@
                 "click",
                 "submit"
               ],
-              "topRow": 110,
-              "bottomRow": 114,
+              "topRow": 100,
+              "bottomRow": 104,
               "parentRowSpace": 10,
               "type": "ICON_BUTTON_WIDGET",
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
-              "leftColumn": 33,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 32,
               "dynamicBindingPathList": [
                 {
                   "key": "buttonColor"
@@ -1186,7 +1219,7 @@
               "isDisabled": false,
               "key": "ne6flml7ut",
               "isDeprecated": false,
-              "rightColumn": 37,
+              "rightColumn": 36,
               "iconName": "minus",
               "widgetId": "k9mkd119m4",
               "minWidth": 50,
@@ -1195,9 +1228,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 111,
+              "originalTopRow": 100,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 115,
+              "originalBottomRow": 104,
               "buttonVariant": "PRIMARY"
             },
             {
@@ -1209,8 +1242,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 105,
-              "bottomRow": 109,
+              "topRow": 100,
+              "bottomRow": 104,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -1219,7 +1252,7 @@
               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
               "parentColumnSpace": 17.9375,
               "dynamicTriggerPathList": [],
-              "leftColumn": 33,
+              "leftColumn": 37,
               "dynamicBindingPathList": [
                 {
                   "key": "truncateButtonColor"
@@ -1236,7 +1269,7 @@
               "text": "Select comment you would like to delete, then click delete icon.\n",
               "key": "ohrtxcrq7v",
               "isDeprecated": false,
-              "rightColumn": 60,
+              "rightColumn": 64,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "0x2ahea260",
@@ -1249,10 +1282,66 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 105,
+              "originalTopRow": 100,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 110,
+              "originalBottomRow": 104,
+              "fontSize": "1rem",
+              "minDynamicHeight": 4
+            },
+            {
+              "widgetName": "Text4",
+              "displayName": "Text",
+              "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+              "searchTags": [
+                "typography",
+                "paragraph",
+                "label"
+              ],
+              "topRow": 59,
+              "bottomRow": 63,
+              "parentRowSpace": 10,
+              "type": "TEXT_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "overflow": "NONE",
+              "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+              "parentColumnSpace": 17.9375,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 32,
+              "dynamicBindingPathList": [
+                {
+                  "key": "truncateButtonColor"
+                },
+                {
+                  "key": "fontFamily"
+                },
+                {
+                  "key": "borderRadius"
+                }
+              ],
+              "shouldTruncate": false,
+              "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+              "text": "Your ratings",
+              "key": "55qclkw7vz",
+              "isDeprecated": false,
+              "rightColumn": 48,
+              "textAlign": "LEFT",
+              "dynamicHeight": "AUTO_HEIGHT",
+              "widgetId": "ueob12gcn5",
+              "minWidth": 450,
+              "isVisible": true,
+              "fontStyle": "BOLD",
+              "textColor": "#231F20",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "responsiveBehavior": "fill",
+              "originalTopRow": 59,
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+              "maxDynamicHeight": 9000,
+              "originalBottomRow": 63,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             }
