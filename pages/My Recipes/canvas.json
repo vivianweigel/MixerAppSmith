@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1070,
+          "bottomRow": 1120,
           "containerStyle": "none",
           "snapRows": 59,
           "parentRowSpace": 1,
@@ -198,7 +198,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 16,
+              "topRow": 17,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -267,7 +267,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 44,
+              "bottomRow": 45,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -332,7 +332,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 69,
+              "topRow": 74,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -370,7 +370,7 @@
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 4,
+              "leftColumn": 1,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -405,7 +405,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1681345867636,
-              "originalBottomRow": 107,
+              "originalBottomRow": 112,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -421,7 +421,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 107,
+              "bottomRow": 112,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -611,7 +611,7 @@
               "key": "vzgocseh71",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 63,
+              "rightColumn": 60,
               "textSize": "0.875rem",
               "widgetId": "pqsabchfk2",
               "minWidth": 450,
@@ -623,7 +623,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 69,
+              "originalTopRow": 74,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -631,6 +631,7 @@
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
+              "onSubmit": "{{post_myrecipe.run()}}",
               "topRow": 17,
               "type": "JSON_FORM_WIDGET",
               "animateLoading": true,
@@ -924,9 +925,13 @@
               "title": "Add New Recipe",
               "hideCard": false,
               "parentColumnSpace": 12.5625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
               "borderWidth": "1",
-              "sourceData": "{\n  \"recipe_name\": \"Enter Name\",\n  \"skill_level\": \"\",\n\t\"category\": \"\",\n  \"steps\": \"Enter Steps\"\t\n}",
+              "sourceData": "{\n  \"recipe_name\": \"\",\n  \"skill_level\": \"\",\n\t\"category\": \"\",\n  \"steps\": \"\"\t\n}",
               "resetButtonLabel": "Reset",
               "key": "a3d000cclx",
               "backgroundColor": "#fff",

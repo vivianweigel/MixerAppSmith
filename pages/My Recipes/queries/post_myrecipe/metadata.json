@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{New_Personal_Recipe.formData}}",
+      "body": "[{{New_Personal_Recipe.formData}},{{appsmith.store.user_id}}]",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -52,7 +52,8 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "New_Personal_Recipe.formData"
+      "New_Personal_Recipe.formData",
+      "appsmith.store.user_id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
