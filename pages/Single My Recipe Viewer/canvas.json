@@ -610,7 +610,7 @@
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 3,
+              "leftColumn": 0,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -649,7 +649,7 @@
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "Table1",
+              "widgetName": "nutritional_table",
               "defaultPageSize": 0,
               "columnOrder": [
                 "calories",
@@ -670,7 +670,12 @@
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
-                "status": 85
+                "status": 85,
+                "sugar": 101,
+                "vegan": 88,
+                "sodium": 97,
+                "gluten_free": 121,
+                "calories": 97
               },
               "parentRowSpace": 10,
               "hideCard": false,
@@ -702,7 +707,7 @@
                   "label": "Calories",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"calories\"]))}}",
+                  "computedValue": "{{nutritional_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"calories\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -731,7 +736,7 @@
                   "label": "Gluten Free",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"gluten_free\"]))}}",
+                  "computedValue": "{{nutritional_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"gluten_free\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -760,7 +765,7 @@
                   "label": "Ingredient Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ingredient_name\"]))}}",
+                  "computedValue": "{{nutritional_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ingredient_name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -789,7 +794,7 @@
                   "label": "Sodium",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sodium\"]))}}",
+                  "computedValue": "{{nutritional_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sodium\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -818,7 +823,7 @@
                   "label": "Sugar",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sugar\"]))}}",
+                  "computedValue": "{{nutritional_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sugar\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -847,7 +852,7 @@
                   "label": "Vegan",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vegan\"]))}}",
+                  "computedValue": "{{nutritional_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vegan\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -876,7 +881,7 @@
                   "label": "Vegetarian",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vegetarian\"]))}}",
+                  "computedValue": "{{nutritional_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vegetarian\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -885,7 +890,7 @@
               "key": "nb7yg0owwo",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 25,
+              "rightColumn": 45,
               "textSize": "0.875rem",
               "widgetId": "o33jrrn24c",
               "minWidth": 450,
@@ -984,6 +989,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "tableData"
+                },
+                {
+                  "key": "onRowSelected"
                 }
               ],
               "displayName": "Table",
@@ -996,7 +1004,11 @@
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 17.9375,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onRowSelected"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
                 "amount": {
@@ -1087,6 +1099,7 @@
                   "cellBackground": ""
                 }
               },
+              "onRowSelected": "{{nutritional_info.run()}}",
               "key": "nb7yg0owwo",
               "canFreezeColumn": true,
               "isDeprecated": false,
@@ -1111,14 +1124,6 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Single My Recipe Viewer_nutritional_info",
-              "name": "nutritional_info",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            },
-            {
               "id": "Single My Recipe Viewer_recipes",
               "name": "recipes",
               "confirmBeforeExecute": false,
@@ -1135,6 +1140,16 @@
               "pluginType": "API",
               "jsonPathKeys": [
                 "recipes_table.selectedRow"
+              ],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Single My Recipe Viewer_nutritional_info",
+              "name": "nutritional_info",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "ingredient_table.selectedRow"
               ],
               "timeoutInMillisecond": 10000
             }
