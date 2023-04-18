@@ -505,7 +505,7 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "user_id.text"
+                "appsmith.store.user_id"
               ],
               "timeoutInMillisecond": 10000
             }
