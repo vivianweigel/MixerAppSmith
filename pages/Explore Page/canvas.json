@@ -921,8 +921,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "fav_recipes.selectedRow",
-                "fav_recipes.selectedRow['recipe_id']"
+                "fav_recipes.selectedRow['recipe_id']",
+                "fav_recipes.selectedRow"
               ],
               "timeoutInMillisecond": 10000
             }
