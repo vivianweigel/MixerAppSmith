@@ -1,0 +1,1 @@
+[{{appsmith.store.rating_row}}, {{appsmith.store.star_rating}}, {{appsmith.store.comment}}, {{appsmith.store.user_id}}]
