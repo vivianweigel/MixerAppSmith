@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "ingredients",
+    "name": "category_filter",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/ingredients"
+        "url": "web:4000/m/get_category"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Single My Recipe Viewer",
+    "pageId": "Single Recipe Viewer",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{recipes_table.selectedRow}}",
+      "body": "{{appsmith.store.category_filter}}",
       "bodyFormData": [],
       "httpMethod": "GET",
       "selfReferencingDataPaths": [],
@@ -42,7 +42,7 @@
         "apiContentType": "application/json"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "body"
@@ -52,14 +52,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "recipes_table.selectedRow"
+      "appsmith.store.category_filter"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Single My Recipe Viewer_ingredients",
+  "id": "Single Recipe Viewer_category_filter",
   "deleted": false,
-  "gitSyncId": "64374acd67181641c771f1ef_643dfabd67181641c771f263"
+  "gitSyncId": "64374976ed772a46709595b0_643f173e7b45e832e5f74bcc"
 }
