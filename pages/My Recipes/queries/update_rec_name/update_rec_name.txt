@@ -1,0 +1,1 @@
+[{{appsmith.store.user_id}}, {{appsmith.store.new_name}}, {{appsmith.store.myrecipe_row}}]
