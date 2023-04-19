@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Single Recipe Viewer",
+    "pageId": "Explore Page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -36,7 +36,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Single Recipe Viewer_recipes",
+  "id": "Explore Page_recipes",
   "deleted": false,
-  "gitSyncId": "64374acd67181641c771f1ef_643df6b467181641c771f25b"
+  "gitSyncId": "64374976ed772a46709595b0_643fec277b45e832e5f74bd9"
 }

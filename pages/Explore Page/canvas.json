@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 790,
+          "bottomRow": 800,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -31,7 +31,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 15,
+              "topRow": 16,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -104,7 +104,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1681689811965,
-              "originalBottomRow": 48,
+              "originalBottomRow": 49,
               "primaryColumnId": "recipe_id",
               "defaultSelectedRowIndices": [
                 0
@@ -125,7 +125,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 48,
+              "bottomRow": 49,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -332,7 +332,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 15,
+              "originalTopRow": 16,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -345,8 +345,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 3,
-              "bottomRow": 10,
+              "topRow": 1,
+              "bottomRow": 8,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -372,7 +372,7 @@
               "text": "Explore Page",
               "key": "prvzudl2bw",
               "isDeprecated": false,
-              "rightColumn": 27,
+              "rightColumn": 19,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "fbg5cxpw2f",
@@ -385,10 +385,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 3,
+              "originalTopRow": 1,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 10,
+              "originalBottomRow": 8,
               "fontSize": "3rem",
               "minDynamicHeight": 4
             },
@@ -401,8 +401,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 11,
-              "bottomRow": 15,
+              "topRow": 12,
+              "bottomRow": 16,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -428,7 +428,7 @@
               "text": "View Top Rated Recipes",
               "key": "prvzudl2bw",
               "isDeprecated": false,
-              "rightColumn": 17,
+              "rightColumn": 15,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "7w6fogfwr9",
@@ -441,10 +441,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 11,
+              "originalTopRow": 12,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 15,
+              "originalBottomRow": 16,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -459,8 +459,8 @@
                 "click",
                 "submit"
               ],
-              "topRow": 50,
-              "bottomRow": 54,
+              "topRow": 51,
+              "bottomRow": 55,
               "tooltip": "Add to your favorites",
               "parentRowSpace": 10,
               "type": "ICON_BUTTON_WIDGET",
@@ -493,9 +493,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
-              "originalTopRow": 50,
+              "originalTopRow": 51,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 54,
+              "originalBottomRow": 55,
               "buttonVariant": "PRIMARY"
             },
             {
@@ -507,8 +507,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 50,
-              "bottomRow": 54,
+              "topRow": 51,
+              "bottomRow": 55,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -547,10 +547,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 50,
+              "originalTopRow": 51,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 54,
+              "originalBottomRow": 55,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -563,8 +563,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 11,
-              "bottomRow": 15,
+              "topRow": 12,
+              "bottomRow": 16,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -603,10 +603,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 11,
+              "originalTopRow": 12,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 15,
+              "originalBottomRow": 16,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -615,7 +615,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 62,
+              "topRow": 63,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -682,7 +682,7 @@
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "columnUpdatedAt": 1681685799614,
-              "originalBottomRow": 79,
+              "originalBottomRow": 80,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -696,7 +696,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 79,
+              "bottomRow": 80,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -841,7 +841,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 62,
+              "originalTopRow": 63,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -854,8 +854,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 58,
-              "bottomRow": 62,
+              "topRow": 59,
+              "bottomRow": 63,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -894,10 +894,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 58,
+              "originalTopRow": 59,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 62,
+              "originalBottomRow": 63,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             }
@@ -921,8 +921,8 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "fav_recipes.selectedRow['recipe_id']",
-                "fav_recipes.selectedRow"
+                "fav_recipes.selectedRow",
+                "fav_recipes.selectedRow['recipe_id']"
               ],
               "timeoutInMillisecond": 10000
             }
